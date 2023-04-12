@@ -29,7 +29,7 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required|stringa|max:255',
+            'title' => 'required|stringaa|max:255',
             'note' => 'required|string|max:255',
             'description' => 'required|string|max:255',
             'category_id' => 'required|exists:App\Models\Category,id'
